@@ -2,17 +2,18 @@
 {% load staticfiles %}
 
 {% block titulo %}
-    {{ post.titulo }}
+    {{ detalle_post.titulo }}
 {% endblock %}
 
 {% block imagen %}
-
+    {{ detalle_post.imagen }}
 {% endblock %}
 
 {% block tituloPrincipal %}
-    
+    <h2>{{ detalle_post.titulo }}</h2>
+    <p>{{ detalle_post.descripcion }}</p>
 {% endblock %}
 
 {% block contenido %}
-    
+    {{ detalle_post.contenido | safe }}
 {% endblock %}
