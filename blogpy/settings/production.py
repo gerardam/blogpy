@@ -10,7 +10,11 @@ ALLOWED_HOSTS = ['blogpykc.herokuapp.com']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.postgresql_psycopg2',
+        'NAME': 'd2o013g2qaa9in',
+        'USER': 'ccreruskvsyjuo',
+        'PASSWORD': 'fc901d6baa2deedbc0dbc56fbe5663b2842a7188012fab7fc689c590329b542e',
+        'HOST': 'ec2-23-21-109-177.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
